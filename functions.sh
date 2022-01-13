@@ -36,3 +36,13 @@ function stage {
 		echo -e "[${CYAN}${STAGE}${RESET}] STAGE - $1"
 	fi
 }
+
+function OK {
+	echo -e "$OK $1"
+	return 0
+}
+
+function KO {
+	echo -e "$KO $1"
+	return 1
+}
